@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
 
 * {
   font-family: "Ubuntu", sans-serif;
@@ -10,10 +9,13 @@
 }
 
 body {
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,116,1) 95%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 116, 1) 95%
+  );
 }
-
 
 a {
   text-decoration: none;
@@ -24,8 +26,8 @@ a {
   background-color: rgb(225, 225, 225);
   padding: 0;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  display: block;
 }
-
 
 nav {
   color: black;
@@ -51,12 +53,12 @@ nav {
   font-size: 24px;
 }
 
-#logo{
-    width: 100px;
-    height: 100px;
-    display: inline-flex;
-    padding-right: -50%;
-    float: left;
+#logo {
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  padding-right: -50%;
+  float: left;
 }
 
 h1 {
@@ -68,21 +70,66 @@ h1 {
   z-index: 0;
 }
 
-
-
-#homePage {
-  font-size: 100px;
+.description {
+  font-size: 18px;
   color: white;
-  z-index: 0;
+  margin: 0 30%;
+  padding: 50px auto auto 20px;
+  display: inline-block;
+  left: 50%;
+  margin-bottom: 25px;
 }
 
 #studyMan {
   width: 400px;
   height: 600px;
-  display: flex;
-  margin: -85px 125px;
+  top: 25%;
+  left: 5%;
+  position: absolute;
   border-radius: 25px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  display: flex;
   z-index: 1;
 }
 
+@media screen and (max-width: 1000px) {
+  #studyMan {
+    top: 40%;
+    left: 10%;
+    width: 300px;
+    height: 450px;
+  }
+  .description {
+    float: right;
+    margin: 0 10% auto 50%;
+  }
+}
+
+label {
+  color: white;
+}
+
+#login-form {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+#username {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto auto 0;
+  padding: 10px 0 10px 10px;
+  border-radius: 10px;
+}
+#username-input {
+  display: flex;
+  justify-content: center;
+}
+
+#sign-up {
+  display: flex;
+  justify-content: center;
+
+  border-radius: 10px;
+}

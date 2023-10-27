@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Time Minder</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js" defer></script>
+    <script src="app.js" defer></script>
   </head>
   <body>
     <main>
@@ -23,35 +23,19 @@
         </nav>
       </div>
 
-      <h1>What is Time Minder?</h1>
+      <h1 id="sign-up">Sign up now!</h1>
 
-      <div id="pageContents">
-        <p class="description">
-          Time Minder is a web application that helps students manage their time
-          and study habits. It is designed to help students stay on track with
-          their studies and keep them motivated to study.
-        </p>
-
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cum
-          temporibus quo debitis obcaecati, placeat architecto reiciendis eum
-          esse quod iste repellat fuga numquam voluptatum incidunt velit error
-          animi quisquam rerum? Quod consequatur veritatis omnis similique.
-          Necessitatibus, atque deserunt, expedita minus mollitia iusto
-          temporibus nisi alias delectus est veniam consequatur!
-        </p>
-
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cum
-          temporibus quo debitis obcaecati, placeat architecto reiciendis eum
-          esse quod iste repellat fuga numquam voluptatum incidunt velit error
-          animi quisquam rerum? Quod consequatur veritatis omnis similique.
-          Necessitatibus, atque deserunt, expedita minus mollitia iusto
-          temporibus nisi alias delectus est veniam consequatur!
-        </p>
+      <div id="login-form">
+        <form>
+          <label id="username-label">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+          />
+        </form>
       </div>
-
-      <img src="images/studying.png" alt="Man studying" id="studyMan" />
     </main>
     <script type="module">
       // Import the functions you need from the SDKs you need
